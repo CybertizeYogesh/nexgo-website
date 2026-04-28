@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import CTA from "@/components/CTA";
-import styles from "@/styles/ServiceDetail.module.css";
+import styles from "@/styles/HomeshiftingServiceDetail.module.css";
 
 export default function HomeShiftingPage() {
   const [openFaq, setOpenFaq] = useState(null);
@@ -56,7 +56,7 @@ export default function HomeShiftingPage() {
                 <div className={styles.imageHoverContainer}>
                   <Image src="/images/services/packing.png" alt="Detail view of packing fragile items" width={380} height={280} className={styles.contentImage} />
                 </div>
-                <div className={`${styles.imageHoverContainer} ${styles.imageOffset}`}>
+                <div className={styles.imageHoverContainer}>
                   <Image src="/images/services/loading.png" alt="Detail view of loading boxes into moving truck" width={380} height={280} className={styles.contentImage} />
                 </div>
               </div>

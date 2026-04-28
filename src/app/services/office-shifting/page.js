@@ -1,9 +1,8 @@
 "use client";
-
 import React, { useState } from "react";
 import Image from "next/image";
 import CTA from "@/components/CTA";
-import styles from "@/styles/ServiceDetail.module.css";
+import styles from "@/styles/OfficeServiceDetail.module.css";
 
 export default function OfficeShiftingPage() {
   const [openFaq, setOpenFaq] = useState(null);
@@ -30,6 +29,7 @@ export default function OfficeShiftingPage() {
       <section className={styles.contentSection}>
         <div className={styles.container}>
           <div className={styles.twoColumnLayout}>
+            {/* LEFT COLUMN */}
             <div className={styles.leftContent}>
               <h2 className={styles.sectionTitle}>Precision-Led Corporate Relocation</h2>
               <p className={styles.description}>Office shifting requires more than just heavy lifting; it requires meticulous planning and technical expertise. NexGo specializes in "Business Continuity" moving, ensuring your infrastructure is back online before your employees arrive at the new location.</p>
@@ -54,66 +54,30 @@ export default function OfficeShiftingPage() {
 
               <div className={styles.staggeredImageGrid}>
                 <div className={styles.imageHoverContainer}>
-                  <Image src="/images/services/office-packing.png" alt="Packing office equipment" width={400} height={300} className={styles.contentImage} />
+                  <Image src="/images/services/office-packing.png" alt="Packing office equipment" width={380} height={280} className={styles.contentImage} />
                 </div>
-                <div className={`${styles.imageHoverContainer} ${styles.imageOffset}`}>
-                  <Image src="/images/services/server-loading.png" alt="Loading IT infrastructure" width={400} height={300} className={styles.contentImage} />
+                <div className={styles.imageHoverContainer}>
+                  <Image src="/images/services/server-loading.png" alt="Loading IT infrastructure" width={380} height={280} className={styles.contentImage} />
                 </div>
               </div>
 
               <h3 className={styles.subTitle}>Corporate Shifting Process</h3>
-              <div className={styles.processSectionWrapper}>
-                <div className={styles.processGridMain}>
-                  <div className={styles.processTimeline}>
-                    {[
-                      { n: "1", t: "Logistics Audit", d: "Detailed survey of assets and technical requirements." },
-                      { n: "2", t: "IT Decommissioning", d: "Systematic labeling and safe shutdown of hardware." },
-                      { n: "3", t: "Specialized Crating", d: "Custom wooden crates for high-value equipment." },
-                      { n: "4", t: "Priority Transit", d: "Sealed, direct-route transport for faster delivery." },
-                      { n: "5", t: "Asset Re-installation", d: "Furniture and workstation assembly at the new site." }
-                    ].map((step, i) => (
-                      <div key={i} className={styles.processStep}>
-                        <div className={styles.stepNum}>{step.n}</div>
-                        <div className={styles.stepText}>
-                          <h4>{step.t}</h4>
-                          <p>{step.d}</p>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-
-                  <div className={styles.processSidebar}>
-                    <div className={styles.processWidget}>
-                      <div className={styles.trustSeals}>
-                        <div className={styles.seal}>
-                          <span className={styles.sealIcon}>🏢</span>
-                          <div><strong>B2B Specialist</strong><p>Corporate Verified</p></div>
-                        </div>
-                        <div className={styles.seal}>
-                          <span className={styles.sealIcon}>🔒</span>
-                          <div><strong>Data Secure</strong><p>Confidential Handling</p></div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div className={styles.reviewWidget}>
-                      <div className={styles.reviewHeader}>
-                        <span className={styles.googleG}>G</span>
-                        <div className={styles.reviewScore}>
-                          <strong>5.0/5.0</strong>
-                          <span className={styles.reviewStars}>★★★★★</span>
-                        </div>
-                      </div>
-                      <p>Top-rated by 400+ Corporate Clients.</p>
-                    </div>
-
-                    <div className={`${styles.processWidget} ${styles.blueWidget}`}>
-                      <h4 className={styles.widgetTitleWhite}>Get a B2B Proposal</h4>
-                      <p className={styles.widgetTextWhite}>Request a formal corporate shifting quote for your company.</p>
-                      <button className={styles.outlineButton}>Request Proposal ➔</button>
+              <div className={styles.processTimeline}>
+                {[
+                  { n: "1", t: "Logistics Audit", d: "Detailed survey of assets and technical requirements." },
+                  { n: "2", t: "IT Decommissioning", d: "Systematic labeling and safe shutdown of hardware." },
+                  { n: "3", t: "Specialized Crating", d: "Custom wooden crates for high-value equipment." },
+                  { n: "4", t: "Priority Transit", d: "Sealed, direct-route transport for faster delivery." },
+                  { n: "5", t: "Asset Re-installation", d: "Furniture and workstation assembly at the new site." }
+                ].map((step, i) => (
+                  <div key={i} className={styles.processStep}>
+                    <div className={styles.stepNum}>{step.n}</div>
+                    <div className={styles.stepText}>
+                      <h4>{step.t}</h4>
+                      <p>{step.d}</p>
                     </div>
                   </div>
-                </div>
+                ))}
               </div>
 
               <h3 className={styles.subTitle}>Frequently Asked Questions</h3>
@@ -130,19 +94,61 @@ export default function OfficeShiftingPage() {
               </div>
             </div>
 
+            {/* RIGHT SIDEBAR */}
             <div className={styles.rightSidebar}>
               <div className={styles.sidebarInner}>
+                {/* Quote Form */}
                 <div className={styles.sidebarWidget}>
                   <h3 className={styles.widgetTitleDark}>Get a Free Quote</h3>
                   <form className={styles.sidebarForm}>
-                    <input type="text" placeholder="Company Name" />
-                    <input type="text" placeholder="Contact Person" />
-                    <input type="text" placeholder="Current Location" />
-                    <input type="text" placeholder="Destination" />
+                    <input type="text" placeholder="Company Name" required />
+                    <input type="text" placeholder="Contact Person" required />
+                    <input type="text" placeholder="Current Location" required />
+                    <input type="text" placeholder="Destination" required />
                     <button type="submit" className={styles.quoteButton}>Get Corporate Quote</button>
                   </form>
                 </div>
 
+                {/* Trust Seals */}
+                <div className={styles.sidebarWidget}>
+                  <div className={styles.trustSeals}>
+                    <div className={styles.seal}>
+                      <span className={styles.sealIcon}>✓</span>
+                      <div>
+                        <strong>B2B Specialist</strong>
+                        <p>Corporate Verified</p>
+                      </div>
+                    </div>
+                    <div className={styles.seal}>
+                      <span className={styles.sealIcon}>🔒</span>
+                      <div>
+                        <strong>Data Secure</strong>
+                        <p>Confidential Handling</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Review Widget */}
+                <div className={styles.reviewWidget}>
+                  <div className={styles.reviewHeader}>
+                    <span className={styles.googleG}>G</span>
+                    <div className={styles.reviewScore}>
+                      <strong>5.0/5.0</strong>
+                      <span className={styles.reviewStars}>★★★★★</span>
+                    </div>
+                  </div>
+                  <p>Top-rated by <strong>400+</strong> Corporate Clients.</p>
+                </div>
+
+                {/* Blue Widget */}
+                <div className={`${styles.sidebarWidget} ${styles.blueWidget}`}>
+                  <h4 className={styles.widgetTitleWhite}>Get a B2B Proposal</h4>
+                  <p className={styles.widgetTextWhite}>Request a formal corporate shifting quote and presentation for your company.</p>
+                  <button className={styles.outlineButton}>Request Proposal ➔</button>
+                </div>
+
+                {/* Corporate Benefits */}
                 <div className={styles.sidebarWidget}>
                   <h4 className={styles.widgetTitleDark}>Corporate Benefits</h4>
                   <ul className={styles.guaranteeList}>
@@ -157,7 +163,6 @@ export default function OfficeShiftingPage() {
           </div>
         </div>
       </section>
-
       <CTA />
     </main>
   );

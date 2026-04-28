@@ -50,6 +50,7 @@ export default function ContactPage() {
         <div className={styles.container}>
           <div className={styles.contactGrid}>
             
+            {/* LEFT COLUMN: INFO, SOCIAL, & TRACKING */}
             <div className={styles.infoColumn}>
               <div className={styles.infoCard}>
                 <div className={styles.iconWrapper}>
@@ -77,19 +78,22 @@ export default function ContactPage() {
                 </div>
               </div>
 
-              <div className={styles.infoCard}>
-                <div className={styles.iconWrapper}>
+              {/* EMERGENCY CONTACT CARD */}
+              <div className={`${styles.infoCard} ${styles.emergencyCard}`}>
+                <div className={styles.iconWrapperRed}>
                   <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                    <circle cx="12" cy="12" r="10"></circle>
-                    <polyline points="12 6 12 12 16 14"></polyline>
+                    <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path>
+                    <line x1="12" y1="9" x2="12" y2="13"></line>
+                    <line x1="12" y1="17" x2="12.01" y2="17"></line>
                   </svg>
                 </div>
                 <div className={styles.infoText}>
-                  <h3>Working Hours</h3>
-                  <p>Monday - Sunday<br/>7:00 AM - 9:45 PM</p>
+                  <h3>In-Transit Emergency</h3>
+                  <p>For urgent dispatch escalation: <br/><strong><a href="tel:+919876543210">+91-9876543210</a></strong></p>
                 </div>
               </div>
 
+              {/* SOCIAL BLOCK */}
               <div className={styles.socialBlock}>
                 <h3 className={styles.socialTitle}>Connect With Us</h3>
                 <div className={styles.socialIcons}>
@@ -109,10 +113,28 @@ export default function ContactPage() {
                   </a>
                 </div>
               </div>
+
+              {/* UPGRADED TRACKING PORTAL */}
+              <div className={styles.trackingCard}>
+                <div className={styles.trackingIconWrapper}>
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                    <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                    <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                  </svg>
+                </div>
+                <div className={styles.trackingContent}>
+                  <h3>Live Tracking Portal</h3>
+                  <p>Track your fleet in real-time using your consignment number.</p>
+                  <button className={styles.trackingBtn}>
+                    Track Shipment <span className={styles.trackArrow}>➔</span>
+                  </button>
+                </div>
+              </div>
             </div>
 
+            {/* RIGHT COLUMN: FORM & TIMELINE */}
             <div className={styles.formColumnWrapper}>
-              {/* DECORATIVE GLOW ELEMENTS */}
               <div className={styles.formGlowBlue}></div>
               <div className={styles.formGlowOrange}></div>
               <div className={styles.formColumn}>
@@ -124,43 +146,49 @@ export default function ContactPage() {
                 <form className={styles.contactForm}>
                   <div className={styles.inputRow}>
                     <div className={styles.inputGroup}>
-                      <label>Full Name</label>
-                      <input type="text" placeholder="John Doe" required />
+                      <input type="text" id="fullName" placeholder=" " required />
+                      <label htmlFor="fullName">Full Name</label>
                     </div>
                     <div className={styles.inputGroup}>
-                      <label>Phone Number</label>
-                      <input type="tel" placeholder="+91 98765 43210" required />
+                      <input type="tel" id="phoneNumber" placeholder=" " required />
+                      <label htmlFor="phoneNumber">Phone Number</label>
                     </div>
                   </div>
 
                   <div className={styles.inputRow}>
                     <div className={styles.inputGroup}>
-                      <label>Email Address</label>
-                      <input type="email" placeholder="john@example.com" required />
+                      <input type="email" id="emailAddr" placeholder=" " required />
+                      <label htmlFor="emailAddr">Email Address</label>
                     </div>
                     <div className={styles.inputGroup}>
-                      <label>Service Required</label>
                       <div className={styles.selectWrapper}>
-                        <select required defaultValue="">
-                          <option value="" disabled>Select a Service</option>
+                        <select id="serviceReq" required defaultValue="">
+                          <option value="" disabled></option>
                           <option value="residential">Residential Shifting</option>
                           <option value="commercial">Commercial/Office Move</option>
                           <option value="vehicle">Vehicle Transport</option>
                           <option value="storage">Warehousing & Storage</option>
                           <option value="other">Other Inquiry</option>
                         </select>
+                        <label htmlFor="serviceReq">Service Required</label>
                       </div>
                     </div>
                   </div>
 
                   <div className={styles.inputGroup}>
-                    <label>Your Message / Requirements</label>
-                    <textarea rows="4" placeholder="Tell us about your moving date, locations, and specific needs..." required></textarea>
+                    <textarea id="msgReq" rows="4" placeholder=" " required></textarea>
+                    <label htmlFor="msgReq">Your Message / Requirements</label>
                   </div>
 
                   <button type="submit" className={styles.submitBtn}>
                     Submit Request <span className={styles.btnArrow}>➔</span>
                   </button>
+
+                  {/* PRIVACY ASSURANCE */}
+                  <div className={styles.privacyNote}>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                    <span>Your information is 100% secure and will never be shared.</span>
+                  </div>
                 </form>
 
                 <div className={styles.nextSteps}>
@@ -188,16 +216,25 @@ export default function ContactPage() {
         </div>
       </section>
 
+      {/* MAP WITH OVERLAY CARD */}
       <section className={styles.mapSection}>
         <div className={styles.container}>
           <div className={styles.mapContainer}>
             <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d119066.52982230402!2d72.7398947!3d21.1592001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04e59411d1563%3A0xfe4558290938b042!2sSurat%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d119066.41709444391!2d72.73989475470362!3d21.159340298539745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04e59411d1563%3A0xfe4558290938b042!2sSurat%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1714295325852!5m2!1sen!2sin" 
               allowFullScreen="" 
               loading="lazy" 
               referrerPolicy="no-referrer-when-downgrade"
               className={styles.mapIframe}
             ></iframe>
+            {/* FLOATING MAP CARD */}
+            <div className={styles.mapOverlayCard}>
+              <h4>NexGo Headquarters</h4>
+              <p>A-102, Bajrang Complex, Surat, Gujarat</p>
+              <a href="https://maps.google.com/?q=Surat,+Gujarat" target="_blank" rel="noopener noreferrer" className={styles.directionsBtn}>
+                Get Directions
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -218,7 +255,8 @@ export default function ContactPage() {
               >
                 <div className={styles.faqQuestion}>
                   <h3>{faq.question}</h3>
-                  <span className={styles.toggleIcon}>{activeFaq === index ? '−' : '+'}</span>
+                  {/* SINGLE + ICON FOR ROTATION */}
+                  <span className={styles.toggleIcon}>+</span>
                 </div>
                 <div className={styles.faqAnswer}>
                   <p>{faq.answer}</p>
