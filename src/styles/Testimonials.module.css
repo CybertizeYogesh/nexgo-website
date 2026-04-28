@@ -1,0 +1,128 @@
+.section {
+  --primary-blue: #080C24;
+  --action-orange: #FA4318;
+  --text-dark: #1A1A1A;
+  --text-light: #666666;
+  padding: clamp(60px, 8vw, 100px) 0;
+  background: #F8F9FA;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 clamp(20px, 5vw, 40px);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: clamp(40px, 6vw, 60px);
+}
+
+.label {
+  display: inline-block;
+  color: var(--action-orange);
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 12px;
+}
+
+.title {
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  color: var(--primary-blue);
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.reviewsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: clamp(20px, 4vw, 30px);
+}
+
+.reviewCard {
+  background: #ffffff;
+  padding: clamp(20px, 4vw, 30px);
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.reviewCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.rating {
+  display: flex;
+  gap: 4px;
+}
+
+.star {
+  width: 18px;
+  height: 18px;
+  fill: var(--action-orange);
+  stroke: var(--action-orange);
+}
+
+.starEmpty {
+  width: 18px;
+  height: 18px;
+  stroke: #ddd;
+  stroke-width: 1.5;
+  fill: none;
+}
+
+.quote {
+  font-size: clamp(0.9rem, 1.3vw, 1rem);
+  line-height: 1.6;
+  color: var(--text-light);
+  font-style: italic;
+}
+
+.clientInfo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.clientImage {
+  width: 48px;
+  height: 48px;
+  background: linear-gradient(135deg, var(--primary-blue) 0%, #1a1f3d 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.clientName {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-dark);
+}
+
+.clientLocation {
+  font-size: 0.85rem;
+  color: var(--text-light);
+}
+
+@media (max-width: 900px) {
+  .reviewsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .reviewsGrid {
+    grid-template-columns: 1fr;
+  }
+}

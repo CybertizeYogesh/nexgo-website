@@ -1,0 +1,246 @@
+.section {
+  --primary-blue: #080C24;
+  --action-orange: #FA4318;
+  --text-dark: #1A1A1A;
+  --text-light: #666666;
+  --bg-light: #F8F9FA;
+
+  padding: clamp(60px, 8vw, 100px) 0;
+  background: var(--bg-light);
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 clamp(20px, 5vw, 40px);
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: clamp(40px, 8vw, 80px);
+  align-items: center;
+}
+
+.imageColumn {
+  position: relative;
+  z-index: 1;
+}
+
+.imageWrapper {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  border-radius: 16px;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+  position: relative;
+  background: #eee;
+}
+
+.floatingTag {
+  position: absolute;
+  bottom: 25px;
+  right: -15px;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  padding: 12px 20px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  z-index: 2;
+}
+
+.tagIcon {
+  color: #10b981;
+  font-weight: 800;
+  font-size: 1.1rem;
+}
+
+.tagText {
+  color: var(--primary-blue);
+  font-weight: 700;
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+
+.contentColumn {
+  color: var(--text-dark);
+}
+
+.badge {
+  display: inline-block;
+  background: var(--action-orange);
+  color: #ffffff;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+.headline {
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  color: var(--primary-blue);
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.description {
+  font-size: clamp(1rem, 1.5vw, 1.1rem);
+  line-height: 1.7;
+  color: var(--text-light);
+  margin-bottom: 30px;
+  max-width: 500px;
+}
+
+.featureList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.featureItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.checkIcon {
+  width: 22px;
+  height: 22px;
+  min-width: 22px;
+  background: rgba(250, 67, 24, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2px;
+}
+
+.checkIcon svg {
+  width: 12px;
+  height: 12px;
+  stroke: var(--action-orange);
+  stroke-width: 3;
+}
+
+.featureText {
+  font-size: clamp(0.95rem, 1.5vw, 1.05rem);
+  color: var(--text-dark);
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.ctaBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: var(--action-orange);
+  color: #ffffff;
+  padding: 14px 28px;
+  border-radius: 8px;
+  font-weight: 700;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  box-shadow: 0 10px 20px rgba(250, 67, 24, 0.2);
+  transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+  margin-top: 35px;
+}
+
+.ctaBtn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 25px rgba(250, 67, 24, 0.35);
+  background: #d93615;
+}
+
+.ctaBtn span {
+  transition: transform 0.3s ease;
+}
+
+.ctaBtn:hover span {
+  transform: translateX(4px);
+}
+
+.animateFadeUp {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.animateFadeRight {
+  opacity: 0;
+  transform: translateX(-40px);
+  transition: opacity 0.8s ease-out, transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.visible .animateFadeUp {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.visible .animateFadeRight {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.delay100 { transition-delay: 200ms; }
+.delay200 { transition-delay: 300ms; }
+
+@media (max-width: 900px) {
+  .container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .imageColumn {
+    order: -1;
+  }
+
+  .imageWrapper {
+    aspect-ratio: 16 / 9;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+  }
+
+  .floatingTag {
+    display: none;
+  }
+
+  .badge {
+    display: block;
+    margin: 0 auto 15px auto;
+    width: max-content;
+  }
+
+  .headline, .description {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .description {
+    max-width: 100%;
+  }
+
+  .featureList {
+    align-items: center;
+  }
+
+  .ctaBtn {
+    display: flex;
+    max-width: 250px;
+    margin: 35px auto 0 auto;
+  }
+
+  .animateFadeRight {
+    transform: translateY(30px);
+  }
+}

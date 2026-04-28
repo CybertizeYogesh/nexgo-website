@@ -1,0 +1,625 @@
+.mainWrapper {
+  background: #ffffff;
+  --primary-blue: #080C24;
+  --action-orange: #FA4318;
+  --light-gray: #f8f9fa;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.narrowContainer {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.heroSection {
+  height: 65vh;
+  min-height: 500px;
+  background: #080C24;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.heroOverlay {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(8,12,36,0.8) 0%, rgba(8,12,36,0.6) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+.heroContainer {
+  max-width: 800px;
+}
+
+.premiumBadge {
+  display: inline-block;
+  background: rgba(250, 67, 24, 0.15);
+  color: #FA4318;
+  border: 1px solid rgba(250, 67, 24, 0.3);
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+.heroTitle {
+  font-size: 2.5rem;
+  color: #fff;
+  font-weight: 300;
+  font-family: 'Playfair Display', Georgia, serif;
+  margin-bottom: 15px;
+  line-height: 1.2;
+  opacity: 0;
+  animation: fadeInUp 0.8s ease 0.2s forwards;
+}
+
+.heroSubtitle {
+  font-size: 1.05rem;
+  color: rgba(255,255,255,0.8);
+  margin-bottom: 30px;
+  line-height: 1.5;
+  opacity: 0;
+  animation: fadeInUp 0.8s ease 0.4s forwards;
+}
+
+.heroButton {
+  display: inline-block;
+  background: #ffffff;
+  color: #080C24;
+  padding: 15px 35px;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 1.05rem;
+  transition: all 0.3s ease;
+  border-radius: 4px;
+  opacity: 0;
+  animation: fadeInUp 0.8s ease 0.6s forwards;
+}
+
+.heroButton:hover {
+  background: #FA4318;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.partnerBanner {
+  background: #f8f9fa;
+  padding: 40px 20px;
+  text-align: center;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.partnerBanner p {
+  font-size: 0.85rem;
+  letter-spacing: 3px;
+  color: #888888;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.partnerLogos {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  color: #aaaaaa;
+  font-weight: 700;
+  font-size: 1.1rem;
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+.partnerLogos span {
+  transition: color 0.4s ease;
+  cursor: default;
+}
+
+.partnerLogos span:hover {
+  color: #080C24;
+}
+
+.introSection {
+  padding: 80px 20px;
+  background: #ffffff;
+  text-align: center;
+}
+
+.introTitle {
+  font-size: 2rem;
+  color: #080C24;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+.introText {
+  font-size: 1.05rem;
+  color: #555555;
+  line-height: 1.7;
+}
+
+.zRow {
+  padding: 50px 20px;
+  background: #f8f9fa;
+}
+
+.zRow:nth-child(even) {
+  background: #f8f9fa;
+}
+
+.zRow.zReverse {
+  background: #ffffff;
+}
+
+.zContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+
+.zRow.zReverse .zContainer {
+  flex-direction: row-reverse;
+}
+
+.zImageWrapper {
+  flex: 1;
+  width: 100%;
+}
+
+.zImage {
+  width: 100%;
+  height: auto;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+  transition: transform 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+  border-radius: 16px;
+  display: block;
+}
+
+.zImageWrapper:hover .zImage {
+  transform: scale(1.03);
+}
+
+.zTextWrapper {
+  flex: 1;
+  padding: 10px 0;
+}
+
+.zTextWrapper h3 {
+  font-size: 1.8rem;
+  color: #080C24;
+  margin-bottom: 15px;
+  font-weight: 700;
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+.zTextWrapper p {
+  font-size: 1rem;
+  color: #555555;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.premiumList {
+  list-style: none;
+  padding: 0;
+}
+
+.premiumList li {
+  font-size: 1rem;
+  color: #080C24;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 500;
+}
+
+.premiumList li::before {
+  content: '✦';
+  color: #FA4318;
+  font-size: 1.2rem;
+}
+
+.darkBanner {
+  background: #080C24;
+  padding: 60px 0;
+  margin: 50px 0;
+}
+
+.darkBannerGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  text-align: center;
+}
+
+.darkStat {
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.svgIcon {
+  width: 48px;
+  height: 48px;
+  color: #FA4318;
+  margin-bottom: 15px;
+  animation: float 4s ease-in-out infinite;
+}
+
+.darkStat h4 {
+  color: #ffffff;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+.darkStat p {
+  color: rgba(255,255,255,0.7);
+  line-height: 1.6;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.processSection {
+  padding: 50px 0;
+}
+
+.processGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.processCard {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  background: #ffffff;
+  padding: 30px;
+  border: 1px solid #eaeaea;
+  border-top: 4px solid #080C24;
+  transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.02);
+  border-radius: 12px;
+}
+
+.processCard:hover {
+  transform: translateY(-10px);
+  border-top-color: #FA4318;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+}
+
+.processStepNumber {
+  position: absolute;
+  top: -15px;
+  right: 10px;
+  font-size: 8rem;
+  font-family: 'Playfair Display', Georgia, serif;
+  color: #080C24;
+  opacity: 0.04;
+  font-weight: 800;
+  line-height: 1;
+  z-index: -1;
+  user-select: none;
+  transition: opacity 0.4s ease;
+}
+
+.processCard:hover .processStepNumber {
+  opacity: 0.08;
+}
+
+.processCard h4 {
+  font-size: 1.2rem;
+  color: #080C24;
+  margin-bottom: 15px;
+  margin-top: 10px;
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+.processCard p {
+  color: #666666;
+  line-height: 1.6;
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+.consultationSection {
+  padding: 80px 0;
+  background: #080C24;
+}
+
+.luxuryFormWrapper {
+  background: rgba(255, 255, 255, 0.02);
+  padding: 40px 20px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+}
+
+.luxuryFormWrapper h2 {
+  font-size: 2rem;
+  color: #ffffff;
+  margin-bottom: 15px;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 300;
+}
+
+.luxuryFormWrapper p {
+  color: rgba(255,255,255,0.7);
+  margin-bottom: 35px;
+  font-size: 1.05rem;
+}
+
+.luxuryForm {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.formRow {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.luxuryInput {
+  width: 100%;
+  padding: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  font-family: inherit;
+  color: #ffffff;
+  transition: all 0.3s ease;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.luxuryInput::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.luxuryInput:focus {
+  outline: none;
+  border-color: #FA4318;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 0 3px rgba(250, 67, 24, 0.2);
+}
+
+.luxuryBtn {
+  background: #FA4318;
+  color: #ffffff;
+  border: none;
+  padding: 18px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+  border-radius: 8px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.luxuryBtn:hover {
+  background: #e03c15;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(250, 67, 24, 0.4);
+}
+
+.faqSection {
+  padding: 80px 0 100px;
+}
+
+.centerTitle {
+  text-align: center;
+  font-size: 2rem;
+  color: #080C24;
+  margin-bottom: 40px;
+  font-weight: 700;
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+.faqWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.faqItem {
+  border-bottom: 1px solid #eaeaea;
+  cursor: pointer;
+  overflow: hidden;
+  background: #ffffff;
+  border-radius: 8px;
+  transition: box-shadow 0.3s ease;
+}
+
+.faqItem:hover {
+  box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+}
+
+.faqHeader {
+  padding: 20px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faqHeader h4 {
+  color: #080C24;
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin: 0;
+  padding-right: 15px;
+  line-height: 1.4;
+}
+
+.faqIcon {
+  font-size: 1.5rem;
+  color: #FA4318;
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
+}
+
+.faqOpen .faqIcon {
+  transform: rotate(45deg);
+}
+
+.faqBody {
+  max-height: 0;
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+
+.faqBody p {
+  color: #666666;
+  line-height: 1.6;
+  padding-bottom: 25px;
+  padding-left: 25px;
+  padding-right: 25px;
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+.faqOpen .faqBody {
+  max-height: 300px;
+  opacity: 1;
+}
+
+@media (min-width: 768px) {
+  .heroTitle {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+  }
+
+  .heroSubtitle {
+    font-size: 1.2rem;
+  }
+
+  .partnerLogos {
+    gap: 60px;
+    font-size: 1.3rem;
+  }
+
+  .processGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  .formRow {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .luxuryForm {
+    gap: 20px;
+  }
+
+  .luxuryFormWrapper {
+    padding: 50px;
+  }
+
+  .luxuryInput {
+    padding: 18px;
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .heroTitle {
+    font-size: 4rem;
+  }
+
+  .introSection {
+    padding: 100px 0 60px;
+  }
+
+  .zContainer {
+    flex-direction: row;
+    gap: 80px;
+  }
+
+  .zRow.zReverse .zContainer {
+    flex-direction: row-reverse;
+  }
+
+  .zTextWrapper {
+    padding: 0;
+  }
+
+  .zTextWrapper h3 {
+    font-size: 2rem;
+  }
+
+  .zTextWrapper p {
+    font-size: 1.05rem;
+  }
+
+  .darkBannerGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .darkStat:not(:last-child) {
+    border-right: 1px solid rgba(255,255,255,0.1);
+  }
+
+  .processGrid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .processCard {
+    padding: 40px;
+  }
+
+  .faqHeader h4 {
+    font-size: 1.15rem;
+  }
+}

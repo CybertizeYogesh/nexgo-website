@@ -1,0 +1,124 @@
+.section {
+  --primary-blue: #080C24;
+  --action-orange: #FA4318;
+  --text-dark: #1A1A1A;
+  --text-light: #666666;
+  padding: clamp(40px, 5vw, 60px) 0;
+  background: #F8F9FA;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 clamp(20px, 5vw, 40px);
+  text-align: center;
+}
+
+.label {
+  font-size: clamp(0.7rem, 1.5vw, 0.85rem);
+  font-weight: 700;
+  color: var(--text-dark);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: clamp(20px, 4vw, 40px);
+}
+
+.trackWrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}
+
+.track {
+  display: flex;
+  width: max-content;
+  animation: scroll 30s linear infinite;
+}
+
+.track:hover,
+.track:active {
+  animation-play-state: paused;
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.logoGroup {
+  display: flex;
+  flex-shrink: 0;
+  gap: clamp(50px, 10vw, 100px);
+  padding-right: clamp(50px, 10vw, 100px);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+  cursor: default;
+}
+
+.iconWrapper {
+  width: clamp(40px, 8vw, 55px);
+  height: clamp(40px, 8vw, 55px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.iconWrapper svg {
+  width: 100%;
+  height: 100%;
+  stroke: #9ca3af;
+  stroke-width: 1.5;
+  fill: none;
+  transition: stroke 0.3s ease;
+}
+
+.companyName {
+  font-size: clamp(1.1rem, 2vw, 1.3rem);
+  font-weight: 700;
+  color: #9ca3af;
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease;
+}
+
+.logo:hover {
+  opacity: 1;
+}
+
+.logo:hover .iconWrapper svg {
+  stroke: var(--primary-blue);
+}
+
+.logo:hover .companyName {
+  color: var(--primary-blue);
+}
+
+.animateFadeUp {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-out, transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.visible .animateFadeUp {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .track {
+    animation-play-state: paused;
+  }
+
+  .animateFadeUp {
+    transition: none;
+  }
+}

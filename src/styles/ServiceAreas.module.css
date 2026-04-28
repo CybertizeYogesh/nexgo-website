@@ -1,0 +1,113 @@
+.section {
+  --primary-blue: #080C24;
+  --action-orange: #FA4318;
+  --text-dark: #1A1A1A;
+  --text-light: #555555;
+
+  padding: 80px 20px;
+  background: #ffffff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.label {
+  display: inline-block;
+  background: rgba(250, 67, 24, 0.1);
+  color: var(--action-orange);
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+}
+
+.title {
+  font-size: 2.8rem;
+  color: var(--primary-blue);
+  font-weight: 800;
+  margin-bottom: 15px;
+  line-height: 1.2;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: var(--text-light);
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.citiesGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.cityCard {
+  background: #ffffff;
+  padding: 16px 20px;
+  border-radius: 12px;
+  border: 1px solid #eaeaea;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--primary-blue);
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
+  cursor: pointer;
+}
+
+.cityCard:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(8, 12, 36, 0.08);
+  border-color: var(--action-orange);
+}
+
+.iconWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--action-orange);
+}
+
+.cityName {
+  display: flex;
+  align-items: center;
+}
+
+.highlight {
+  background: var(--action-orange);
+  color: #ffffff;
+  border-color: var(--action-orange);
+  box-shadow: 0 4px 15px rgba(250, 67, 24, 0.15);
+}
+
+.highlight .iconWrapper {
+  color: #ffffff;
+}
+
+.highlight:hover {
+  background: #e03c15;
+  border-color: #e03c15;
+  color: #ffffff;
+  box-shadow: 0 8px 25px rgba(250, 67, 24, 0.25);
+}
+
+@media (min-width: 768px) {
+  .citiesGrid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

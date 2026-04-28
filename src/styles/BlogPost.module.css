@@ -1,0 +1,368 @@
+.mainWrapper {
+  background: #fdfdfd;
+  --primary-blue: #080C24;
+  --action-orange: #FA4318;
+  --border-color: #eaeaea;
+  --text-main: #333;
+  --text-muted: #666;
+  font-family: sans-serif;
+  padding-top: 120px;
+  padding-bottom: 0px;
+}
+
+.articleContainer {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 30px;
+  font-size: 0.9rem;
+}
+
+.breadcrumbs a {
+  color: var(--primary-blue);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.breadcrumbs a:hover {
+  color: var(--action-orange);
+}
+
+.crumbSep {
+  color: #ccc;
+}
+
+.crumbCurrent {
+  color: var(--text-muted);
+}
+
+.articleHeader {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.metaRow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+}
+
+.categoryBadge {
+  background: rgba(250, 67, 24, 0.1);
+  color: var(--action-orange);
+  padding: 6px 16px;
+  border-radius: 50px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.metaText {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.metaDot {
+  color: #ccc;
+}
+
+.articleTitle {
+  font-size: 3rem;
+  color: var(--primary-blue);
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 25px;
+  letter-spacing: -1px;
+}
+
+.articleExcerpt {
+  font-size: 1.25rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-bottom: 40px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.authorRow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  border-top: 1px solid var(--border-color);
+  padding-top: 30px;
+}
+
+.authorAvatar {
+  width: 50px;
+  height: 50px;
+  background: var(--primary-blue);
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 1.3rem;
+}
+
+.authorInfo {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.authorInfo strong {
+  color: var(--primary-blue);
+  font-size: 1.05rem;
+}
+
+.authorInfo span {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.heroImageWrapper {
+  width: 100%;
+  height: 400px;
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 60px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.05);
+}
+
+.heroImage {
+  object-fit: cover;
+}
+
+.contentLayout {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.socialShare {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.stickySocial {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.shareText {
+  font-weight: 700;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+}
+
+.shareBtn {
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  border: 1px solid var(--border-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-blue);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.85rem;
+  transition: all 0.3s;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+}
+
+.shareBtn:hover {
+  border-color: var(--action-orange);
+  color: var(--action-orange);
+  transform: translateY(-2px);
+}
+
+.articleContent {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.articleContent p {
+  font-size: 1.15rem;
+  color: var(--text-main);
+  line-height: 1.8;
+  margin-bottom: 25px;
+}
+
+.articleContent .intro-paragraph {
+  font-size: 1.25rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+
+.articleContent h2 {
+  font-size: 2.2rem;
+  color: var(--primary-blue);
+  font-weight: 800;
+  margin: 50px 0 20px;
+  letter-spacing: -0.5px;
+}
+
+.articleContent h3 {
+  font-size: 1.6rem;
+  color: var(--primary-blue);
+  font-weight: 700;
+  margin: 40px 0 15px;
+}
+
+.articleContent ul, .articleContent ol {
+  margin-bottom: 30px;
+  padding-left: 20px;
+}
+
+.articleContent li {
+  font-size: 1.15rem;
+  color: var(--text-main);
+  line-height: 1.7;
+  margin-bottom: 15px;
+  padding-left: 10px;
+}
+
+.articleContent li strong {
+  color: var(--primary-blue);
+}
+
+.articleContent blockquote {
+  border-left: 4px solid var(--action-orange);
+  padding: 15px 0 15px 30px;
+  margin: 40px 0;
+  background: rgba(250, 67, 24, 0.03);
+  border-radius: 0 12px 12px 0;
+  position: relative;
+}
+
+.articleContent blockquote p {
+  font-size: 1.4rem;
+  color: var(--primary-blue);
+  font-weight: 600;
+  line-height: 1.6;
+  margin: 0;
+  font-style: italic;
+}
+
+.relatedSection {
+  padding: 80px 0;
+  background: #f8f9fa;
+  margin-top: 80px;
+}
+
+.relatedContainer {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.relatedTitle {
+  font-size: 2rem;
+  color: var(--primary-blue);
+  font-weight: 800;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.relatedGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+.relatedCard {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  text-decoration: none;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.relatedCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  border-color: var(--action-orange);
+}
+
+.relatedImgWrapper {
+  width: 100%;
+  height: 200px;
+  position: relative;
+}
+
+.relatedInfo {
+  padding: 25px;
+}
+
+.relatedInfo h4 {
+  font-size: 1.2rem;
+  color: var(--primary-blue);
+  margin-bottom: 15px;
+  line-height: 1.4;
+}
+
+.relatedRead {
+  color: var(--action-orange);
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+@media (min-width: 768px) {
+  .articleTitle {
+    font-size: 4rem;
+  }
+
+  .heroImageWrapper {
+    height: 600px;
+  }
+
+  .relatedGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .contentLayout {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 60px;
+  }
+
+  .socialShare {
+    flex: 0 0 60px;
+  }
+
+  .stickySocial {
+    flex-direction: column;
+    position: sticky;
+    top: 150px;
+  }
+
+  .articleContent {
+    margin: 0;
+  }
+}

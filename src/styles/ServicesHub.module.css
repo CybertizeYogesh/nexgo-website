@@ -1,0 +1,424 @@
+.heroSection {
+  background: linear-gradient(135deg, var(--primary-blue) 0%, #0a1628 100%);
+  padding: 100px 20px;
+  text-align: center;
+  min-height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heroContent {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.badge {
+  display: inline-block;
+  background: rgba(250, 67, 24, 0.15);
+  color: var(--action-orange);
+  font-size: 0.85rem;
+  font-weight: 700;
+  padding: 8px 16px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.heroContent h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.heroContent p {
+  font-size: 1.25rem;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.7;
+}
+
+.animateFadeUp {
+  animation: fadeInUp 0.8s ease forwards;
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.animateFadeUpDelay {
+  animation: fadeInUp 0.8s ease forwards;
+  animation-delay: 0.2s;
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.sectionTitle {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: var(--primary-blue);
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.servicesGrid {
+  background: var(--bg-light);
+  padding: 80px 20px;
+}
+
+.bigGrid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 25px;
+}
+
+.serviceCard {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 35px 25px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+  border-bottom: 4px solid transparent;
+}
+
+.serviceCard:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
+  border-bottom-color: var(--action-orange);
+}
+
+.serviceIcon {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 20px;
+  background: rgba(250, 67, 24, 0.1);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.serviceIcon svg {
+  width: 36px;
+  height: 36px;
+  color: var(--action-orange);
+}
+
+.serviceCard h3 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--primary-blue);
+  margin-bottom: 12px;
+}
+
+.serviceCard p {
+  font-size: 0.9rem;
+  color: var(--text-light);
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.serviceLink {
+  color: var(--action-orange);
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+}
+
+.serviceLink:hover {
+  text-decoration: underline;
+}
+
+.zigZagSection {
+  background: #ffffff;
+  padding: 80px 20px;
+}
+
+.zigZagRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.reverseRow {
+  direction: rtl;
+}
+
+.reverseRow > * {
+  direction: ltr;
+}
+
+.zigZagImage {
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.12);
+}
+
+.imageBox {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  background: linear-gradient(135deg, #d1d5db 0%, #9ca3af 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6b7280;
+  font-weight: 600;
+}
+
+.zigZagContent {
+  padding: 20px;
+}
+
+.blockBadge {
+  display: inline-block;
+  background: rgba(250, 67, 24, 0.1);
+  color: var(--action-orange);
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 6px 14px;
+  border-radius: 20px;
+  margin-bottom: 15px;
+}
+
+.zigZagContent h3 {
+  font-size: 2rem;
+  color: var(--primary-blue);
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.zigZagContent > p {
+  font-size: 1.05rem;
+  color: var(--text-light);
+  line-height: 1.7;
+  margin-bottom: 25px;
+}
+
+.featureList {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 25px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.featureList li {
+  color: var(--text-dark);
+  font-size: 1rem;
+  padding-left: 25px;
+  position: relative;
+}
+
+.featureList li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--action-orange);
+  font-weight: 700;
+}
+
+.ctaButton {
+  display: inline-block;
+  background: var(--action-orange);
+  color: #ffffff;
+  text-decoration: none;
+  padding: 12px 30px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.ctaButton:hover {
+  background: #d93615;
+  transform: translateY(-2px);
+}
+
+.advantagesSection {
+  background: var(--bg-light);
+  padding: 80px 20px;
+}
+
+.advantagesGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+.advantageCard {
+  background: #ffffff;
+  padding: 30px 25px;
+  text-align: center;
+  border-radius: 12px;
+  border-bottom: 3px solid var(--action-orange);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.advantageCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.advantageCard h3 {
+  font-size: 1.15rem;
+  color: var(--primary-blue);
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.advantageCard p {
+  font-size: 0.9rem;
+  color: var(--text-light);
+  line-height: 1.5;
+}
+
+.processSection {
+  background: #ffffff;
+  padding: 80px 20px;
+}
+
+.processGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  text-align: center;
+}
+
+.processStep {
+  position: relative;
+  padding: 20px;
+}
+
+.processStep:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 30px;
+  right: -35px;
+  width: 70px;
+  height: 2px;
+  background: #e5e7eb;
+  z-index: 0;
+}
+
+.stepNumber {
+  width: 60px;
+  height: 60px;
+  background: var(--action-orange);
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  box-shadow: 0 5px 15px rgba(250, 67, 24, 0.3);
+}
+
+.processStep h3 {
+  font-size: 1.15rem;
+  color: var(--primary-blue);
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.processStep p {
+  font-size: 0.9rem;
+  color: var(--text-light);
+  line-height: 1.5;
+}
+
+@media (max-width: 1200px) {
+  .bigGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 1023px) {
+  .bigGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .advantagesGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .processGrid {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 40px;
+  }
+
+  .processStep:not(:last-child)::after {
+    display: none;
+  }
+
+  .zigZagRow {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .reverseRow {
+    direction: ltr;
+  }
+
+  .heroContent h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .heroSection {
+    padding: 60px 20px;
+    min-height: 350px;
+  }
+
+  .heroContent h1 {
+    font-size: 2rem;
+  }
+
+  .heroContent p {
+    font-size: 1rem;
+  }
+
+  .bigGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .advantagesGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .processGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .featureList {
+    grid-template-columns: 1fr;
+  }
+
+  .zigZagContent h3 {
+    font-size: 1.5rem;
+  }
+
+  .sectionTitle {
+    font-size: 1.75rem;
+  }
+}

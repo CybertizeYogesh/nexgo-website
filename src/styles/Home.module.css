@@ -1,0 +1,12 @@
+.homeWrapper {
+  --primary-blue: #080C24;
+  --action-orange: #FA4318;
+  --text-dark: #1A1A1A;
+  --text-light: #666666;
+  --bg-light: #F8F9FA;
+  --bg-white: #FFFFFF;
+}
+
+.homeWrapper {
+  min-height: 100vh;
+}
