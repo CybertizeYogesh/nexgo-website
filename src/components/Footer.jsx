@@ -8,7 +8,7 @@ export default function Footer() {
       <div className={styles.container}>
         <div className={styles.brandColumn}>
           <Image
-            src="/logo.jpg"
+            src="/logo_white.svg"
             alt="NexGo Packers and Movers Logo"
             width={180}
             height={60}

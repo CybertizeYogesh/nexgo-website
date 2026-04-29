@@ -180,6 +180,11 @@
   100% { opacity: 1; transform: translateX(0); }
 }
 
+@keyframes slideFadeUpMobile {
+  0% { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
 .animateLeft1 {
   opacity: 0;
   animation: slideFadeLeft 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
@@ -204,7 +209,7 @@
   animation-delay: 0.3s;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 992px) {
   .container {
     grid-template-columns: 1fr;
     gap: clamp(30px, 5vw, 50px);
@@ -253,22 +258,26 @@
     grid-template-columns: 1fr;
   }
 
+  /* Safely scoped mobile grid logic */
   .trustIndicators {
-    flex-direction: column;
-    gap: 10px;
-    align-items: flex-start;
+    display: grid;
+    grid-template-columns: max-content max-content;
+    gap: 12px 20px;
+    justify-content: center;
+    width: 100%;
   }
 
   .trustItem {
     font-size: 0.9rem;
   }
 
-  .animateLeft1, .animateLeft2, .animateLeft3, .animateRight {
-    animation-name: slideFadeUpMobile;
+  /* Force 3rd item to span full width and center itself */
+  .trustItem:nth-child(3) {
+    grid-column: 1 / -1;
+    justify-self: center;
   }
 
-  @keyframes slideFadeUpMobile {
-    0% { opacity: 0; transform: translateY(30px); }
-    100% { opacity: 1; transform: translateY(0); }
+  .animateLeft1, .animateLeft2, .animateLeft3, .animateRight {
+    animation-name: slideFadeUpMobile;
   }
 }

@@ -231,7 +231,10 @@
   }
 
   .featureList {
-    align-items: center;
+    width: max-content;
+    max-width: 100%;
+    margin: 0 auto;
+    align-items: flex-start;
   }
 
   .ctaBtn {

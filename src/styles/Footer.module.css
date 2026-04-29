@@ -143,12 +143,15 @@
     text-align: center;
     align-items: center; /* Centers the Logo Image */
   }
-  .quickLinks {
-    align-items: center;
-    text-align: center;
+  /* Centers the container, but keeps the text flush left */
+  .quickLinks, .contactColumn {
+    width: max-content;
+    margin:0 auto;
+    align-items: flex-start;
+    text-align: left;
   }
-  .contactColumn {
-    text-align: center;
+  .contactItem {
+    justify-content: flex-start;
   }
   .contactItem {
     justify-content: center;
