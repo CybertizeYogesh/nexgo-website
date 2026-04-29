@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import CTA from "@/components/CTA";
 import styles from "@/styles/About.module.css";
 import { milestones } from "@/data/about";
@@ -12,7 +13,7 @@ export default function AboutPage() {
   return (
     <main>
       <section className={styles.pageHeader}>
-        {/* Full-width Background with Overlay */}
+        {/* Full-width Background with heavy overlay for Option 3 */}
         <div className={styles.backgroundWrapper}>
           <Image
             src="/images/hero-bg.jpg"
@@ -24,13 +25,35 @@ export default function AboutPage() {
           />
           <div className={styles.overlay} />
         </div>
-        {/* Centered Text Container */}
+        {/* Hybrid Grid Container */}
         <div className={styles.headerContainer}>
-          <div className={styles.headerContent}>
-            <h1 className={`${styles.title} ${styles.animateHeader}`}>About NexGo Packers & Movers</h1>
-            <p className={`${styles.subtitle} ${styles.animateHeader} ${styles.delay100}`}>
-              Delivering trust, safety, and reliability across India.
-            </p>
+          <div className={styles.headerGrid}>
+
+            {/* Left Content Column (Text + New Button) */}
+            <div className={`${styles.contentLeft} ${styles.animateHeader}`}>
+              <h1 className={styles.title}>About NexGo Packers & Movers</h1>
+              <p className={`${styles.subtitle} ${styles.delay100}`}>
+                Delivering trust, safety, and reliability across India.
+              </p>
+              <Link
+                href="/quote"
+                className={`${styles.headerCtaBtn} ${styles.delay200}`}
+              >
+                Get Your Quote <span>→</span>
+              </Link>
+            </div>
+            {/* Right Visual Column (Human Element PNG) */}
+            <div className={`${styles.visualRight} ${styles.animateHeader} ${styles.delay300}`}>
+              <Image
+                src="/images/about/hero-person.png"
+                alt="NexGo Professional Moving Specialist"
+                width={450}
+                height={550}
+                className={styles.heroVisualImage}
+                style={{ objectFit: 'contain' }}
+                priority
+              />
+            </div>
           </div>
         </div>
       </section>
