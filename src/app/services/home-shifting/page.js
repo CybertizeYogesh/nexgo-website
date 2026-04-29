@@ -35,7 +35,7 @@ export default function HomeShiftingPage() {
               <p className={styles.description}>Relocating a home is more than just moving boxes; it's about transitioning your life. At NexGo, we treat every single item as if it were our own. Our professionally trained crew uses international standard techniques to ensure your belongings arrive in the exact same condition they left.</p>
 
               <div className={styles.mainImageWrapper}>
-                <Image src="/images/services/professional-packing.png" alt="Professional packing service for home shifting" width={800} height={450} className={styles.contentImage} priority />
+                <Image src="/images/services/professional-packing.webp" alt="Professional packing service for home shifting" width={800} height={450} className={styles.contentImage} priority />
               </div>
 
               <h3 className={styles.subTitle}>Why Choose NexGo for Home Shifting?</h3>
@@ -54,10 +54,10 @@ export default function HomeShiftingPage() {
 
               <div className={styles.staggeredImageGrid}>
                 <div className={styles.imageHoverContainer}>
-                  <Image src="/images/services/packing.png" alt="Detail view of packing fragile items" width={380} height={280} className={styles.contentImage} />
+                  <Image src="/images/services/packing.webp" alt="Detail view of packing fragile items" width={380} height={280} className={styles.contentImage} />
                 </div>
                 <div className={styles.imageHoverContainer}>
-                  <Image src="/images/services/loading.png" alt="Detail view of loading boxes into moving truck" width={380} height={280} className={styles.contentImage} />
+                  <Image src="/images/services/loading.webp" alt="Detail view of loading boxes into moving truck" width={380} height={280} className={styles.contentImage} />
                 </div>
               </div>
 

@@ -40,7 +40,7 @@ export default function WhyChooseUs() {
         <div className={`${styles.imageColumn} ${styles.animateFadeRight}`}>
           <div className={styles.imageWrapper}>
             <Image
-              src="/images/hero-banner.jpg"
+              src="/images/hero-banner.webp"
               alt="Professional Moving Team"
               fill
               style={{ objectFit: "cover" }}

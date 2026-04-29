@@ -16,7 +16,7 @@ export default function AboutPage() {
         {/* Full-width Background with heavy overlay for Option 3 */}
         <div className={styles.backgroundWrapper}>
           <Image
-            src="/images/hero-bg.jpg"
+            src="/images/hero-bg.webp"
             alt="NexGo Logistics Hub"
             fill
             style={{ objectFit: "cover" }}
@@ -45,7 +45,7 @@ export default function AboutPage() {
             {/* Right Visual Column (Human Element PNG) */}
             <div className={`${styles.visualRight} ${styles.animateHeader} ${styles.delay300}`}>
               <Image
-                src="/images/about/hero-person.png"
+                src="/images/about/hero-person.webp"
                 alt="NexGo Professional Moving Specialist"
                 width={450}
                 height={550}
@@ -74,7 +74,7 @@ export default function AboutPage() {
             </div>
             <div className={styles.imagePlaceholder}>
               <Image
-                src="/images/about/our-journey.jpg"
+                src="/images/about/our-journey.webp"
                 alt="NexGo Packers and Movers Journey"
                 fill
                 style={{ objectFit: 'cover', borderRadius: '16px' }}
@@ -313,7 +313,7 @@ export default function AboutPage() {
             </div>
             <div className={styles.coverageMapPlaceholder}>
               <Image 
-                src="/images/about/coverage-map.jpg" 
+                src="/images/about/coverage-map.webp" 
                 alt="National Coverage Map" 
                 fill 
                 className={styles.coverageImage} 
@@ -332,7 +332,7 @@ export default function AboutPage() {
           <div className={styles.zigZagRow}>
             <div className={styles.zigZagImageWrapper}>
               <Image 
-                src="/images/about/packing.jpg" 
+                src="/images/about/packing.webp" 
                 alt="Packing Materials" 
                 fill 
                 className={styles.zigZagImage} 
@@ -360,7 +360,7 @@ export default function AboutPage() {
             </div>
             <div className={styles.zigZagImageWrapper}>
               <Image 
-                src="/images/about/truck-loading.jpg" 
+                src="/images/about/truck-loading.webp" 
                 alt="Secure Transit Loading" 
                 fill 
                 className={styles.zigZagImage} 
@@ -374,7 +374,7 @@ export default function AboutPage() {
           <div className={styles.caseStudyCard}>
             <div className={styles.caseStudyImageWrapper}>
               <Image 
-                src="/images/about/case-study.jpg" 
+                src="/images/about/case-study.webp" 
                 alt="IT Firm Relocation Case Study" 
                 fill 
                 className={styles.caseStudyImage} 
@@ -399,7 +399,7 @@ export default function AboutPage() {
         <div className={styles.container}>
           <div className={styles.csrBanner}>
             <Image 
-              src="/images/about/csr-bg.jpg" 
+              src="/images/about/csr-bg.webp" 
               alt="Sustainable Logistics Background" 
               fill 
               className={styles.csrImage}

@@ -35,7 +35,7 @@ export default function OfficeShiftingPage() {
               <p className={styles.description}>Office shifting requires more than just heavy lifting; it requires meticulous planning and technical expertise. NexGo specializes in "Business Continuity" moving, ensuring your infrastructure is back online before your employees arrive at the new location.</p>
 
               <div className={styles.mainImageWrapper}>
-                <Image src="/images/services/office-main.png" alt="Professional office relocation and setup" width={800} height={450} className={styles.contentImage} priority />
+                <Image src="/images/services/office-main.webp" alt="Professional office relocation and setup" width={800} height={450} className={styles.contentImage} priority />
               </div>
 
               <h3 className={styles.subTitle}>Corporate Specialized Handling</h3>
@@ -54,10 +54,10 @@ export default function OfficeShiftingPage() {
 
               <div className={styles.staggeredImageGrid}>
                 <div className={styles.imageHoverContainer}>
-                  <Image src="/images/services/office-packing.png" alt="Packing office equipment" width={380} height={280} className={styles.contentImage} />
+                  <Image src="/images/services/office-packing.webp" alt="Packing office equipment" width={380} height={280} className={styles.contentImage} />
                 </div>
                 <div className={styles.imageHoverContainer}>
-                  <Image src="/images/services/server-loading.png" alt="Loading IT infrastructure" width={380} height={280} className={styles.contentImage} />
+                  <Image src="/images/services/server-loading.webp" alt="Loading IT infrastructure" width={380} height={280} className={styles.contentImage} />
                 </div>
               </div>
 

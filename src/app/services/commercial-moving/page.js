@@ -32,7 +32,7 @@ export default function CommercialMovingPage() {
               <h2 className={styles.sectionTitle}>Scale Meets Precision</h2>
               <p className={styles.description}>Relocating a commercial enterprise requires meticulous planning to ensure zero operational downtime. At NexGo, we treat your business continuity as our top priority. Our commercial logistics engineers provide highly structured moving solutions tailored for large-scale corporate assets.</p>
               <div className={styles.mainImageWrapper}>
-                <Image src="/images/services/commercial-machinery.png" alt="Heavy Machinery Rigging" width={800} height={450} className={styles.contentImage} priority />
+                <Image src="/images/services/commercial-machinery.webp" alt="Heavy Machinery Rigging" width={800} height={450} className={styles.contentImage} priority />
               </div>
               <h3 className={styles.subTitle}>Industrial Machinery & Rigging</h3>
               <p className={styles.description}>Manufacturing equipment requires specialized handling. We deploy certified rigging experts and dedicated commercial fleet vehicles to transport your sensitive industrial assets with absolute precision and safety.</p>
@@ -48,10 +48,10 @@ export default function CommercialMovingPage() {
               </div>
               <div className={styles.staggeredImageGrid}>
                 <div className={styles.imageHoverContainer}>
-                  <Image src="/images/services/commercial-warehouse.png" alt="Warehouse and Retail Logistics" width={380} height={280} className={styles.contentImage} />
+                  <Image src="/images/services/commercial-warehouse.webp" alt="Warehouse and Retail Logistics" width={380} height={280} className={styles.contentImage} />
                 </div>
                 <div className={styles.imageHoverContainer}>
-                  <Image src="/images/services/loading-crew.png" alt="Professional loading crew" width={380} height={280} className={styles.contentImage} />
+                  <Image src="/images/services/loading-crew.webp" alt="Professional loading crew" width={380} height={280} className={styles.contentImage} />
                 </div>
               </div>
               <h3 className={styles.subTitle}>Commercial Execution Protocol</h3>

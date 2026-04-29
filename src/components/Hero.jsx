@@ -7,7 +7,7 @@ export default function Hero() {
     <section className={styles.hero}>
       <div className={styles.backgroundWrapper}>
         <Image
-          src="/images/hero-bg.jpg"
+          src="/images/hero-bg.webp"
           alt="NexGo Background"
           fill
           style={{ objectFit: "cover" }}

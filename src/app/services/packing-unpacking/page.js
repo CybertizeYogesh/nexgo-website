@@ -35,7 +35,7 @@ export default function PackingUnpackingPage() {
               <p className={styles.description}>The safety of your move is determined before the truck even arrives. We don't just put things in boxes; we engineer custom packaging solutions for every item type in your home. From fragile glassware to heavy electronics, our 3-layer protection standard ensures absolute security.</p>
 
               <div className={styles.mainImageWrapper}>
-                <Image src="/images/services/packing-main.png" alt="Professional moving crew packing a living room" width={800} height={450} className={styles.contentImage} priority />
+                <Image src="/images/services/packing-main.webp" alt="Professional moving crew packing a living room" width={800} height={450} className={styles.contentImage} priority />
               </div>
 
               <h3 className={styles.subTitle}>The 3-Layer Protection Standard</h3>
@@ -57,7 +57,7 @@ export default function PackingUnpackingPage() {
                   <Image src="/images/services/packing-fragile.png" alt="Wrapping fragile glassware" width={380} height={280} className={styles.contentImage} />
                 </div>
                 <div className={`${styles.imageHoverContainer} ${styles.imageOffset}`}>
-                  <Image src="/images/services/unpacking-setup.png" alt="Crew unpacking and setting up kitchen" width={380} height={280} className={styles.contentImage} />
+                  <Image src="/images/services/unpacking-setup.webp" alt="Crew unpacking and setting up kitchen" width={380} height={280} className={styles.contentImage} />
                 </div>
               </div>
 

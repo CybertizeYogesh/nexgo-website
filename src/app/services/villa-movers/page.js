@@ -32,7 +32,7 @@ export default function VillaMoversPage() {
               <h2 className={styles.sectionTitle}>An Elevated Standard of Moving</h2>
               <p className={styles.description}>Moving a large-scale estate requires a level of precision and care that goes far beyond standard logistics. Our specialized Villa Movers division provides an exclusive, end-to-end relocation service designed for complete discretion and absolute protection of your high-value assets.</p>
               <div className={styles.mainImageWrapper}>
-                <Image src="/images/services/villa-art.png" alt="Packing fine art and antiques" width={800} height={450} className={styles.contentImage} priority />
+                <Image src="/images/services/villa-art.webp" alt="Packing fine art and antiques" width={800} height={450} className={styles.contentImage} priority />
               </div>
               <h3 className={styles.subTitle}>Museum-Grade Asset Protection</h3>
               <p className={styles.description}>Your fine art, antiques, and luxury furniture are irreplaceable. We abandon standard cardboard for bespoke wooden crating, multi-layer shock absorption, and climate-controlled transport to ensure absolute preservation.</p>
@@ -48,10 +48,10 @@ export default function VillaMoversPage() {
               </div>
               <div className={styles.staggeredImageGrid}>
                 <div className={styles.imageHoverContainer}>
-                  <Image src="/images/services/villa-wardrobe.png" alt="White glove wardrobe packing" width={380} height={280} className={styles.contentImage} />
+                  <Image src="/images/services/villa-wardrobe.webp" alt="White glove wardrobe packing" width={380} height={280} className={styles.contentImage} />
                 </div>
                 <div className={styles.imageHoverContainer}>
-                  <Image src="/images/services/packing-fragile.png" alt="Secure packaging of delicate items" width={380} height={280} className={styles.contentImage} />
+                  <Image src="/images/services/packing-fragile.webp" alt="Secure packaging of delicate items" width={380} height={280} className={styles.contentImage} />
                 </div>
               </div>
               <h3 className={styles.subTitle}>Our Signature Process</h3>

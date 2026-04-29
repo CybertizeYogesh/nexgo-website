@@ -30,21 +30,21 @@ export const teamMembers = [
     id: 1,
     name: "Vikram Sharma",
     role: "Founder & CEO",
-    image: "/images/team/ceo.jpg",
+    image: "/images/team/ceo.webp",
     bio: "With over 20 years in enterprise supply chain management, Vikram founded NexGo to bring corporate engineering standards to the Indian relocation industry."
   },
   {
     id: 2,
     name: "Priya Desai",
     role: "Head of Operations",
-    image: "/images/team/operations.jpg",
+    image: "/images/team/operations.webp",
     bio: "Priya oversees our pan-India fleet and warehousing network, ensuring that every commercial and residential move is executed with zero downtime."
   },
   {
     id: 3,
     name: "Arjun Patel",
     role: "Chief Logistics Engineer",
-    image: "/images/team/engineer.jpg",
+    image: "/images/team/engineer.webp",
     bio: "Specializing in heavy machinery and fine-art rigging, Arjun designs the custom crating and suspension systems used in our most complex relocations."
   }
 ];

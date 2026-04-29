@@ -17,7 +17,7 @@ export const blogPosts = [
     author: "NexGo Logistics Team",
     readTime: "6 min read",
     excerpt: "Downtime is the enemy of growth. Learn the 5-step engineering protocol we use to move corporate offices overnight without stopping operations.",
-    image: "/images/blog/office-move.png",
+    image: "/images/blog/office-move.webp",
     slug: "/blog/zero-downtime-office-relocation"
   },
   {
@@ -28,7 +28,7 @@ export const blogPosts = [
     author: "Auto Division",
     readTime: "4 min read",
     excerpt: "Shipping your car across India? From insurance to fuel levels, here is everything you need to check before the carrier arrives.",
-    image: "/images/blog/car-shipping.png",
+    image: "/images/blog/car-shipping.webp",
     slug: "/blog/vehicle-shipping-tips"
   },
   {
@@ -39,7 +39,7 @@ export const blogPosts = [
     author: "NexGo Residential Team",
     readTime: "5 min read",
     excerpt: "Don't pay to move things you no longer need. Follow our step-by-step room guide to downsize efficiently before the packers arrive.",
-    image: "/images/blog/decluttering.png",
+    image: "/images/blog/decluttering.webp",
     slug: "/blog/pre-move-decluttering-checklist"
   },
   {
@@ -50,7 +50,7 @@ export const blogPosts = [
     author: "NexGo Logistics Team",
     readTime: "6 min read",
     excerpt: "A deep dive into declaring asset values, all-risk coverage versus standard liability, and how digital claims are processed.",
-    image: "/images/blog/insurance-guide.png",
+    image: "/images/blog/insurance-guide.webp",
     slug: "/blog/understanding-transit-insurance"
   },
   {
@@ -61,7 +61,7 @@ export const blogPosts = [
     author: "Warehouse Division",
     readTime: "5 min read",
     excerpt: "How to properly prep wooden furniture, electronics, and fabrics to withstand years inside a climate-controlled vault.",
-    image: "/images/blog/storage-tips.png",
+    image: "/images/blog/storage-tips.webp",
     slug: "/blog/long-term-storage-efficiency"
   },
   {
@@ -72,7 +72,7 @@ export const blogPosts = [
     author: "IT Relocation Experts",
     readTime: "8 min read",
     excerpt: "The ultimate guide to decommissioning, transporting, and re-racking server racks and sensitive corporate data centers.",
-    image: "/images/blog/it-relocation.png",
+    image: "/images/blog/it-relocation.webp",
     slug: "/blog/relocating-it-infrastructure"
   },
   {
@@ -83,7 +83,7 @@ export const blogPosts = [
     author: "White-Glove Division",
     readTime: "7 min read",
     excerpt: "From custom wooden crating to museum-grade archival tissue, learn the trade secrets of white-glove fine art preservation.",
-    image: "/images/blog/fine-art.png",
+    image: "/images/blog/fine-art.webp",
     slug: "/blog/packing-fine-art-antiques"
   },
   {
@@ -94,7 +94,7 @@ export const blogPosts = [
     author: "NexGo Logistics Team",
     readTime: "6 min read",
     excerpt: "Heavy rains require heavy-duty protection. Discover our waterproofing protocols for furniture, electronics, and paperwork during monsoon moves.",
-    image: "/images/blog/monsoon-moving.png",
+    image: "/images/blog/monsoon-moving.webp",
     slug: "/blog/monsoon-moving-guide"
   },
   {
@@ -105,7 +105,7 @@ export const blogPosts = [
     author: "NexGo Financials",
     readTime: "5 min read",
     excerpt: "Think moving yourself is cheaper? We break down the hidden costs of truck rentals, damaged goods, and lost time.",
-    image: "/images/blog/diy-vs-pro.png",
+    image: "/images/blog/diy-vs-pro.webp",
     slug: "/blog/diy-vs-professional-moving"
   },
   {
@@ -116,7 +116,7 @@ export const blogPosts = [
     author: "Auto Division",
     readTime: "4 min read",
     excerpt: "Motorcycles require specialized tie-down systems to protect the suspension. Here is how we transport high-end superbikes safely.",
-    image: "/images/blog/bike-transport.png",
+    image: "/images/blog/bike-transport.webp",
     slug: "/blog/superbike-transport-safety"
   },
   {
@@ -127,7 +127,7 @@ export const blogPosts = [
     author: "NexGo Residential Team",
     readTime: "5 min read",
     excerpt: "Relocating is highly stressful for animals. Use this veterinary-approved checklist to keep your dogs and cats calm during transit.",
-    image: "/images/blog/moving-with-pets.png",
+    image: "/images/blog/moving-with-pets.webp",
     slug: "/blog/moving-with-pets"
   },
   {
@@ -138,7 +138,7 @@ export const blogPosts = [
     author: "NexGo Logistics Team",
     readTime: "8 min read",
     excerpt: "Hydraulic cranes, load balancing, and flatbed securing. A look into how we move CNC machines and industrial manufacturing assets.",
-    image: "/images/blog/heavy-machinery.png",
+    image: "/images/blog/heavy-machinery.webp",
     slug: "/blog/industrial-machinery-rigging"
   },
   {
@@ -149,7 +149,7 @@ export const blogPosts = [
     author: "Warehouse Division",
     readTime: "4 min read",
     excerpt: "Why standard lock-ups fail. Learn how unregulated humidity destroys wood, leather, and sensitive electronics over time.",
-    image: "/images/blog/climate-control.png",
+    image: "/images/blog/climate-control.webp",
     slug: "/blog/climate-controlled-warehousing"
   },
   {
@@ -160,7 +160,7 @@ export const blogPosts = [
     author: "NexGo Residential Team",
     readTime: "3 min read",
     excerpt: "Stop hunting for your coffee mugs. Implement our professional multi-color labeling system to make unpacking a breeze.",
-    image: "/images/blog/labeling-system.png",
+    image: "/images/blog/labeling-system.webp",
     slug: "/blog/color-coded-labeling"
   },
   {
@@ -171,7 +171,7 @@ export const blogPosts = [
     author: "NexGo Logistics Team",
     readTime: "4 min read",
     excerpt: "Scratched floors cost thousands in deposit deductions. Discover the heavy-duty runners and dollies we use to protect premises.",
-    image: "/images/blog/floor-protection.png",
+    image: "/images/blog/floor-protection.webp",
     slug: "/blog/protecting-hardwood-floors"
   },
   {
@@ -182,7 +182,7 @@ export const blogPosts = [
     author: "NexGo Residential Team",
     readTime: "6 min read",
     excerpt: "Elevator reservations, narrow stairwells, and balcony hoisting. How to tackle the unique challenges of moving into a high-rise.",
-    image: "/images/blog/high-rise-move.png",
+    image: "/images/blog/high-rise-move.webp",
     slug: "/blog/high-rise-apartment-moves"
   },
   {
@@ -193,7 +193,7 @@ export const blogPosts = [
     author: "Commercial Division",
     readTime: "7 min read",
     excerpt: "Moving walk-in freezers, industrial ovens, and delicate front-of-house fixtures requires strict hygiene and safety protocols.",
-    image: "/images/blog/restaurant-move.png",
+    image: "/images/blog/restaurant-move.webp",
     slug: "/blog/restaurant-relocation-guide"
   },
   {
@@ -204,7 +204,7 @@ export const blogPosts = [
     author: "White-Glove Division",
     readTime: "5 min read",
     excerpt: "Grand and upright pianos are notoriously fragile and heavy. Learn why specialized piano skids and trained handlers are mandatory.",
-    image: "/images/blog/piano-moving.png",
+    image: "/images/blog/piano-moving.webp",
     slug: "/blog/transporting-pianos-safely"
   },
   {
@@ -215,7 +215,7 @@ export const blogPosts = [
     author: "Warehouse Division",
     readTime: "4 min read",
     excerpt: "For law firms and medical offices, moving physical files requires strict confidentiality. Learn about our chain-of-custody protocols.",
-    image: "/images/blog/secure-documents.png",
+    image: "/images/blog/secure-documents.webp",
     slug: "/blog/secure-document-storage"
   },
   {
@@ -226,7 +226,7 @@ export const blogPosts = [
     author: "NexGo Logistics Team",
     readTime: "5 min read",
     excerpt: "A chronological breakdown of moving day, from the crew's morning arrival to the final walk-through at your new property.",
-    image: "/images/blog/moving-day-expectations.png",
+    image: "/images/blog/moving-day-expectations.webp",
     slug: "/blog/what-to-expect-moving-day"
   },
   {
@@ -237,7 +237,7 @@ export const blogPosts = [
     author: "Auto Division",
     readTime: "3 min read",
     excerpt: "A common question with strict legal answers. Learn the weight limits and liability rules regarding packing personal items in your vehicle.",
-    image: "/images/blog/car-trunk-prep.png",
+    image: "/images/blog/car-trunk-prep.webp",
     slug: "/blog/car-shipping-trunk-prep"
   },
   {
@@ -248,7 +248,7 @@ export const blogPosts = [
     author: "NexGo Residential Team",
     readTime: "4 min read",
     excerpt: "Plants suffer from shock during transport. Use these tips to ensure your indoor garden survives the journey.",
-    image: "/images/blog/moving-plants.png",
+    image: "/images/blog/moving-plants.webp",
     slug: "/blog/moving-indoor-plants"
   },
   {
@@ -259,7 +259,7 @@ export const blogPosts = [
     author: "Warehouse Division",
     readTime: "6 min read",
     excerpt: "How systematic shrink-wrapping and structural pallet stacking prevents inventory damage for massive retail chains.",
-    image: "/images/blog/palletizing-retail.png",
+    image: "/images/blog/palletizing-retail.webp",
     slug: "/blog/warehouse-palletizing-strategies"
   },
   {
@@ -270,7 +270,7 @@ export const blogPosts = [
     author: "NexGo Security Team",
     readTime: "5 min read",
     excerpt: "From hostage loads to fake insurance certificates. Here are the red flags to watch out for when hiring a transport company.",
-    image: "/images/blog/moving-scams.png",
+    image: "/images/blog/moving-scams.webp",
     slug: "/blog/recognizing-moving-scams"
   },
   {
@@ -281,7 +281,7 @@ export const blogPosts = [
     author: "NexGo Logistics Team",
     readTime: "4 min read",
     excerpt: "Don't lose those screws. Professional techniques for taking apart beds, wardrobes, and dining tables safely.",
-    image: "/images/blog/furniture-disassembly.png",
+    image: "/images/blog/furniture-disassembly.webp",
     slug: "/blog/disassembling-heavy-furniture"
   },
   {
@@ -292,7 +292,7 @@ export const blogPosts = [
     author: "NexGo IT Logistics",
     readTime: "5 min read",
     excerpt: "Static electricity and shocks can destroy TVs and monitors. Learn why anti-static bubble wrap and original boxes are crucial.",
-    image: "/images/blog/packing-electronics.png",
+    image: "/images/blog/packing-electronics.webp",
     slug: "/blog/packing-electronics-safely"
   },
   {
@@ -303,7 +303,7 @@ export const blogPosts = [
     author: "NexGo Logistics Team",
     readTime: "7 min read",
     excerpt: "Crossing state borders involves toll taxes, checkposts, and route planning. Here is everything you need to know about domestic moving.",
-    image: "/images/blog/interstate-moving.png",
+    image: "/images/blog/interstate-moving.webp",
     slug: "/blog/interstate-relocation-guide"
   },
   {
@@ -314,7 +314,7 @@ export const blogPosts = [
     author: "NexGo Residential Team",
     readTime: "6 min read",
     excerpt: "Moving elderly family members requires patience and minimal disruption. Learn our white-glove approach to senior relocations.",
-    image: "/images/blog/senior-moving.png",
+    image: "/images/blog/senior-moving.webp",
     slug: "/blog/relocating-seniors"
   },
   {
@@ -325,7 +325,7 @@ export const blogPosts = [
     author: "Warehouse Division",
     readTime: "6 min read",
     excerpt: "From SKU barcode scanning to modular racking, discover how we handle high-volume B2B storage and retrieval.",
-    image: "/images/blog/ecommerce-storage.png",
+    image: "/images/blog/ecommerce-storage.webp",
     slug: "/blog/ecommerce-warehouse-inventory"
   },
   {
@@ -336,7 +336,7 @@ export const blogPosts = [
     author: "Auto Division",
     readTime: "5 min read",
     excerpt: "Classic cars cannot be towed or driven onto steep ramps. Discover the hydraulic lift-gate carriers we use for vintage autos.",
-    image: "/images/blog/classic-car-transport.png",
+    image: "/images/blog/classic-car-transport.webp",
     slug: "/blog/classic-car-transport"
   },
   {
@@ -347,7 +347,7 @@ export const blogPosts = [
     author: "Commercial Division",
     readTime: "5 min read",
     excerpt: "Treadmills and weight racks are heavy, awkward, and easily damaged. How our crew dismantles and moves commercial gym equipment.",
-    image: "/images/blog/gym-relocation.png",
+    image: "/images/blog/gym-relocation.webp",
     slug: "/blog/gym-fitness-center-relocation"
   },
   {
@@ -358,7 +358,7 @@ export const blogPosts = [
     author: "NexGo Logistics Team",
     readTime: "3 min read",
     excerpt: "Books are the heaviest items per cubic foot in your house. Learn why small boxes are your best friend when moving a library.",
-    image: "/images/blog/packing-books.png",
+    image: "/images/blog/packing-books.webp",
     slug: "/blog/how-to-pack-books"
   },
   {
@@ -369,7 +369,7 @@ export const blogPosts = [
     author: "NexGo Security Team",
     readTime: "6 min read",
     excerpt: "Physical hard drives and servers contain highly sensitive corporate data. Learn our chain-of-custody tracking protocols.",
-    image: "/images/blog/data-security.png",
+    image: "/images/blog/data-security.webp",
     slug: "/blog/corporate-move-data-security"
   },
   {
@@ -380,7 +380,7 @@ export const blogPosts = [
     author: "NexGo Residential Team",
     readTime: "4 min read",
     excerpt: "Defrosting, draining, and securing compressor drums. The exact steps to prepare major white goods for a safe move.",
-    image: "/images/blog/moving-appliances.png",
+    image: "/images/blog/moving-appliances.webp",
     slug: "/blog/moving-kitchen-appliances"
   },
   {
@@ -391,7 +391,7 @@ export const blogPosts = [
     author: "White-Glove Division",
     readTime: "5 min read",
     excerpt: "Fine wine is highly susceptible to temperature shock and vibration. How we transport and store high-value cellars.",
-    image: "/images/blog/wine-transport.png",
+    image: "/images/blog/wine-transport.webp",
     slug: "/blog/moving-wine-collections"
   },
   {
@@ -402,7 +402,7 @@ export const blogPosts = [
     author: "NexGo Financials",
     readTime: "4 min read",
     excerpt: "Accidents are rare, but preparation is key. A step-by-step guide to documenting damage and filing a fast transit claim.",
-    image: "/images/blog/insurance-claims.png",
+    image: "/images/blog/insurance-claims.webp",
     slug: "/blog/filing-moving-insurance-claim"
   },
   {
@@ -413,7 +413,7 @@ export const blogPosts = [
     author: "Commercial Division",
     readTime: "6 min read",
     excerpt: "Items weighing over 1000kg require structural engineering to move. Inside our specialized heavy-vault relocation strategies.",
-    image: "/images/blog/moving-safes.png",
+    image: "/images/blog/moving-safes.webp",
     slug: "/blog/moving-safes-and-vaults"
   },
   {
@@ -424,7 +424,7 @@ export const blogPosts = [
     author: "NexGo Logistics Team",
     readTime: "4 min read",
     excerpt: "How to reduce your carbon footprint during a move using biodegradable peanuts, reusable plastic totes, and recycled paper.",
-    image: "/images/blog/eco-friendly-packing.png",
+    image: "/images/blog/eco-friendly-packing.webp",
     slug: "/blog/eco-friendly-packing"
   },
   {
@@ -435,7 +435,7 @@ export const blogPosts = [
     author: "NexGo Residential Team",
     readTime: "5 min read",
     excerpt: "Moving from a 4-BHK to a 2-BHK? Here is how to sort memories from clutter and optimize your new, smaller floor plan.",
-    image: "/images/blog/downsizing.png",
+    image: "/images/blog/downsizing.webp",
     slug: "/blog/downsizing-for-retirement"
   },
   {
@@ -446,7 +446,7 @@ export const blogPosts = [
     author: "Auto Division",
     readTime: "4 min read",
     excerpt: "Marine vehicles require specialized trailers and hull-protection strapping. Learn about our aquatic transport capabilities.",
-    image: "/images/blog/boat-transport.png",
+    image: "/images/blog/boat-transport.webp",
     slug: "/blog/transporting-boats-jet-skis"
   },
   {
@@ -457,7 +457,7 @@ export const blogPosts = [
     author: "Warehouse Division",
     readTime: "3 min read",
     excerpt: "Stop crushing your boxes. Learn the brick-wall stacking method and weight distribution rules for long-term storage.",
-    image: "/images/blog/box-stacking.png",
+    image: "/images/blog/box-stacking.webp",
     slug: "/blog/safe-box-stacking"
   },
   {
@@ -468,7 +468,7 @@ export const blogPosts = [
     author: "NexGo Residential Team",
     readTime: "3 min read",
     excerpt: "Discover the magic of wardrobe cartons with built-in hanging bars to move your designer clothing straight from the closet.",
-    image: "/images/blog/packing-clothes.png",
+    image: "/images/blog/packing-clothes.webp",
     slug: "/blog/packing-wardrobes"
   },
   {
@@ -479,7 +479,7 @@ export const blogPosts = [
     author: "NexGo Logistics Team",
     readTime: "5 min read",
     excerpt: "Moving is considered one of life's top stressors. Psychological tips and organizational strategies to keep yourself calm and focused.",
-    image: "/images/blog/moving-anxiety.png",
+    image: "/images/blog/moving-anxiety.webp",
     slug: "/blog/dealing-with-relocation-anxiety"
   },
   {
@@ -490,7 +490,7 @@ export const blogPosts = [
     author: "NexGo Residential Team",
     readTime: "4 min read",
     excerpt: "What to unpack first, essential utility checks, and how to set up your primary bedroom for a stress-free first night.",
-    image: "/images/blog/first-24-hours.png",
+    image: "/images/blog/first-24-hours.webp",
     slug: "/blog/first-24-hours-new-home"
   },
   {
@@ -501,7 +501,7 @@ export const blogPosts = [
     author: "White-Glove Division",
     readTime: "4 min read",
     excerpt: "Suspended packing, foam molding, and custom crating. How we transport thousands of fragile crystal pieces without a single crack.",
-    image: "/images/blog/moving-chandeliers.png",
+    image: "/images/blog/moving-chandeliers.webp",
     slug: "/blog/moving-chandeliers"
   },
   {
@@ -512,7 +512,7 @@ export const blogPosts = [
     author: "Commercial Division",
     readTime: "6 min read",
     excerpt: "Transporting hundreds of desks, lab equipment, and library archives during summer breaks. Inside our institutional moving logistics.",
-    image: "/images/blog/school-relocation.png",
+    image: "/images/blog/school-relocation.webp",
     slug: "/blog/school-educational-relocation"
   },
   {
@@ -523,7 +523,7 @@ export const blogPosts = [
     author: "Auto Division",
     readTime: "3 min read",
     excerpt: "Small vehicles need unique securing methods. Learn how we safely load and tie down recreational and utility vehicles.",
-    image: "/images/blog/atv-transport.png",
+    image: "/images/blog/atv-transport.webp",
     slug: "/blog/transporting-atvs-golf-carts"
   },
   {
@@ -534,7 +534,7 @@ export const blogPosts = [
     author: "Warehouse Division",
     readTime: "5 min read",
     excerpt: "UV light and humidity are the enemies of antique wood and paintings. Why specialized vault storage is non-negotiable.",
-    image: "/images/blog/storing-antiques.png",
+    image: "/images/blog/storing-antiques.webp",
     slug: "/blog/storing-antiques-safely"
   },
   {
@@ -545,7 +545,7 @@ export const blogPosts = [
     author: "NexGo Security Team",
     readTime: "4 min read",
     excerpt: "How our 24/7 centralized monitoring hub tracks route deviation, truck speed, and seal integrity for absolute commercial security.",
-    image: "/images/blog/gps-tracking.png",
+    image: "/images/blog/gps-tracking.webp",
     slug: "/blog/gps-tracking-freight"
   },
   {
@@ -556,7 +556,7 @@ export const blogPosts = [
     author: "NexGo Residential Team",
     readTime: "5 min read",
     excerpt: "Don't live out of boxes for months. A systematic guide to uncrating, room setup, and immediate debris removal.",
-    image: "/images/blog/unpacking-strategy.png",
+    image: "/images/blog/unpacking-strategy.webp",
     slug: "/blog/ultimate-unpacking-strategy"
   }
 ];

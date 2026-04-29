@@ -27,7 +27,7 @@ export default function ContactPage() {
       <section className={styles.heroSection}>
         <div className={styles.heroBackground}>
           <Image 
-            src="/images/hero-bg.jpg" 
+            src="/images/hero-bg.webp" 
             alt="Contact NexGo Support" 
             fill 
             className={styles.heroImage} 

@@ -72,7 +72,7 @@ export default function Navbar() {
         <div className={styles.container}>
         <Link href="/" className={styles.logo}>
           <Image
-            src="/logo.jpg"
+            src="/logo.webp"
             alt="NexGo Packers and Movers Logo"
             width={160}
             height={82}

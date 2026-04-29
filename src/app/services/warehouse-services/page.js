@@ -35,7 +35,7 @@ export default function WarehouseServicesPage() {
               <p className={styles.description}>Sometimes your new space isn't quite ready, or you simply need to downsize securely. NexGo provides state-of-the-art warehousing solutions designed for the absolute preservation of your household or commercial assets. We don't just store items; we protect them in specialized, private vaults.</p>
 
               <div className={styles.mainImageWrapper}>
-                <Image src="/images/services/warehouse-main.png" alt="Clean and secure warehouse facility" width={800} height={450} className={styles.contentImage} priority />
+                <Image src="/images/services/warehouse-main.webp" alt="Clean and secure warehouse facility" width={800} height={450} className={styles.contentImage} priority />
               </div>
 
               <h3 className={styles.subTitle}>Enterprise-Grade Storage Infrastructure</h3>
@@ -54,10 +54,10 @@ export default function WarehouseServicesPage() {
 
               <div className={styles.staggeredImageGrid}>
                 <div className={styles.imageHoverContainer}>
-                  <Image src="/images/services/warehouse-storage.png" alt="Secure wooden storage vaults" width={380} height={280} className={styles.contentImage} />
+                  <Image src="/images/services/warehouse-storage.webp" alt="Secure wooden storage vaults" width={380} height={280} className={styles.contentImage} />
                 </div>
                 <div className={`${styles.imageHoverContainer} ${styles.imageOffset}`}>
-                  <Image src="/images/services/warehouse-security.png" alt="High-tech security and CCTV" width={380} height={280} className={styles.contentImage} />
+                  <Image src="/images/services/warehouse-security.webp" alt="High-tech security and CCTV" width={380} height={280} className={styles.contentImage} />
                 </div>
               </div>
 

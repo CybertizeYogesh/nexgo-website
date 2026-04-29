@@ -35,7 +35,7 @@ export default function InsuranceServicesPage() {
               <p className={styles.description}>While we maintain a 99% damage-free record, we believe in being prepared for the unexpected. NexGo offers enterprise-grade transit insurance for both residential and commercial moves. We don't just move your life; we provide a safety net for your most valuable investments.</p>
 
               <div className={styles.mainImageWrapper}>
-                <Image src="/images/services/insurance-main.png" alt="Secure transit and insurance protection" width={800} height={450} className={styles.contentImage} priority />
+                <Image src="/images/services/insurance-main.webp" alt="Secure transit and insurance protection" width={800} height={450} className={styles.contentImage} priority />
               </div>
 
               <h3 className={styles.subTitle}>Why Transit Insurance is Essential</h3>
@@ -54,10 +54,10 @@ export default function InsuranceServicesPage() {
 
               <div className={styles.staggeredImageGrid}>
                 <div className={styles.imageHoverContainer}>
-                  <Image src="/images/services/claims-process.png" alt="Digital claims processing" width={380} height={280} className={styles.contentImage} />
+                  <Image src="/images/services/claims-process.webp" alt="Digital claims processing" width={380} height={280} className={styles.contentImage} />
                 </div>
                 <div className={styles.imageHoverContainer}>
-                  <Image src="/images/services/policy-docs.png" alt="Official insurance policy documents" width={380} height={280} className={styles.contentImage} />
+                  <Image src="/images/services/policy-docs.webp" alt="Official insurance policy documents" width={380} height={280} className={styles.contentImage} />
                 </div>
               </div>
 

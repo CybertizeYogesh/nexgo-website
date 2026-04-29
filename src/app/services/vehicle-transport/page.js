@@ -65,7 +65,7 @@ export default function VehicleTransportPage() {
         <div className={styles.zContainer}>
           <div className={styles.zImageWrapper}>
             <Image
-              src="/images/services/vehicle-carrier.png"
+              src="/images/services/vehicle-carrier.webp"
               alt="Enclosed premium vehicle carrier"
               width={600}
               height={500}
@@ -101,7 +101,7 @@ export default function VehicleTransportPage() {
           </div>
           <div className={styles.zImageWrapper}>
             <Image
-              src="/images/services/vehicle-strapping.png"
+              src="/images/services/vehicle-strapping.webp"
               alt="Secure wheel strapping system"
               width={600}
               height={500}

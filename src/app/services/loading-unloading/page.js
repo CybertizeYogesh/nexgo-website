@@ -35,7 +35,7 @@ export default function LoadingUnloadingPage() {
               <p className={styles.description}>Loading and unloading is the most critical phase of any move. We don't rely on brute force alone; we use calculated logistics and specialized equipment to ensure that even the heaviest safes, machinery, or fragile furniture are handled with technical precision.</p>
 
               <div className={styles.mainImageWrapper}>
-                <Image src="/images/services/loading-main.png" alt="Professional loading and unloading crew" width={800} height={450} className={styles.contentImage} priority />
+                <Image src="/images/services/loading-main.webp" alt="Professional loading and unloading crew" width={800} height={450} className={styles.contentImage} priority />
               </div>
 
               <h3 className={styles.subTitle}>Our Technical Edge</h3>
@@ -57,7 +57,7 @@ export default function LoadingUnloadingPage() {
                   <Image src="/images/services/loading-crew.png" alt="Crew using hydraulic lifts" width={380} height={280} className={styles.contentImage} />
                 </div>
                 <div className={`${styles.imageHoverContainer} ${styles.imageOffset}`}>
-                  <Image src="/images/services/unloading-care.png" alt="Careful unloading with floor protection" width={380} height={280} className={styles.contentImage} />
+                  <Image src="/images/services/unloading-care.webp" alt="Careful unloading with floor protection" width={380} height={280} className={styles.contentImage} />
                 </div>
               </div>
 
