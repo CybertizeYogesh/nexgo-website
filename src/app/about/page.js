@@ -312,11 +312,11 @@ export default function AboutPage() {
               </ul>
             </div>
             <div className={styles.coverageMapPlaceholder}>
-              <Image 
-                src="/images/about/coverage-map.webp" 
-                alt="National Coverage Map" 
-                fill 
-                className={styles.coverageImage} 
+              <Image
+                src="/images/about/coverage-map.webp"
+                alt="National Coverage Map"
+                fill
+                className={styles.coverageImage}
               />
             </div>
           </div>
@@ -328,14 +328,14 @@ export default function AboutPage() {
             <span className={styles.sectionBadge}>Quality Assurance</span>
             <h2>Uncompromising Quality & Safety</h2>
           </div>
-          
+
           <div className={styles.zigZagRow}>
             <div className={styles.zigZagImageWrapper}>
-              <Image 
-                src="/images/about/packing.webp" 
-                alt="Packing Materials" 
-                fill 
-                className={styles.zigZagImage} 
+              <Image
+                src="/images/about/packing.webp"
+                alt="Packing Materials"
+                fill
+                className={styles.zigZagImage}
               />
             </div>
             <div className={styles.zigZagContent}>
@@ -359,11 +359,11 @@ export default function AboutPage() {
               </ul>
             </div>
             <div className={styles.zigZagImageWrapper}>
-              <Image 
-                src="/images/about/truck-loading.webp" 
-                alt="Secure Transit Loading" 
-                fill 
-                className={styles.zigZagImage} 
+              <Image
+                src="/images/about/truck-loading.webp"
+                alt="Secure Transit Loading"
+                fill
+                className={styles.zigZagImage}
               />
             </div>
           </div>
@@ -373,11 +373,11 @@ export default function AboutPage() {
         <div className={styles.container}>
           <div className={styles.caseStudyCard}>
             <div className={styles.caseStudyImageWrapper}>
-              <Image 
-                src="/images/about/case-study.webp" 
-                alt="IT Firm Relocation Case Study" 
-                fill 
-                className={styles.caseStudyImage} 
+              <Image
+                src="/images/about/case-study.webp"
+                alt="IT Firm Relocation Case Study"
+                fill
+                className={styles.caseStudyImage}
               />
             </div>
             <div className={styles.caseStudyContent}>
@@ -398,10 +398,10 @@ export default function AboutPage() {
       <section className={styles.csrSection}>
         <div className={styles.container}>
           <div className={styles.csrBanner}>
-            <Image 
-              src="/images/about/csr-bg.webp" 
-              alt="Sustainable Logistics Background" 
-              fill 
+            <Image
+              src="/images/about/csr-bg.webp"
+              alt="Sustainable Logistics Background"
+              fill
               className={styles.csrImage}
             />
             <div className={styles.csrOverlay}>
