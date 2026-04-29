@@ -12,23 +12,25 @@ export default function AboutPage() {
   return (
     <main>
       <section className={styles.pageHeader}>
+        {/* Full-width Background with Overlay */}
+        <div className={styles.backgroundWrapper}>
+          <Image
+            src="/images/hero-bg.jpg"
+            alt="NexGo Logistics Hub"
+            fill
+            style={{ objectFit: "cover" }}
+            className={styles.backgroundImage}
+            priority
+          />
+          <div className={styles.overlay} />
+        </div>
+        {/* Centered Text Container */}
         <div className={styles.headerContainer}>
           <div className={styles.headerContent}>
             <h1 className={`${styles.title} ${styles.animateHeader}`}>About NexGo Packers & Movers</h1>
             <p className={`${styles.subtitle} ${styles.animateHeader} ${styles.delay100}`}>
               Delivering trust, safety, and reliability across India.
             </p>
-          </div>
-          <div className={`${styles.headerVisual} ${styles.animateHeader} ${styles.delay200}`}>
-            <div className={styles.truckWrapper}>
-              <Image
-                src="/images/about/truck-transparent.png"
-                alt="NexGo Delivery Fleet"
-                fill
-                style={{ objectFit: 'contain' }}
-                priority
-              />
-            </div>
           </div>
         </div>
       </section>

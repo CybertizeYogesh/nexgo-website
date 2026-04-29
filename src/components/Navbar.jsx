@@ -62,13 +62,14 @@ export default function Navbar() {
   const isServicesActive = pathname?.startsWith('/services');
 
   return (
-    <nav className={`${styles.navbar} ${scrolled ? styles.scrolled : ""}`}>
-      <div 
-        className={`${styles.overlay} ${isOpen ? styles.showOverlay : ""}`} 
+    <>
+      <div
+        className={`${styles.overlay} ${isOpen ? styles.showOverlay : ""}`}
         onClick={closeMenu}
         aria-hidden="true"
       ></div>
-      <div className={styles.container}>
+      <nav className={`${styles.navbar} ${scrolled ? styles.scrolled : ""}`}>
+        <div className={styles.container}>
         <Link href="/" className={styles.logo}>
           <Image
             src="/logo.jpg"
@@ -235,5 +236,6 @@ export default function Navbar() {
         </Link>
       </div>
     </nav>
+    </>
   );
 }
