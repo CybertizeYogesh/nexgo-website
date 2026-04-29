@@ -937,21 +937,21 @@
    CSR SECTION
    ========================================= */
 .csrSection {
-  padding: 100px 20px;
+  padding: 60px 15px; /* Reduced for mobile */
   background: #ffffff;
 }
 
 .csrBanner {
   position: relative;
-  min-height: 480px;
-  border-radius: 24px;
+  min-height: auto; /* Let content dictate height on mobile */
+  border-radius: 16px; /* Smaller radius on mobile */
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 60px 20px;
+  padding: 40px 15px; /* Reduced padding for mobile */
   background: linear-gradient(135deg, var(--primary-blue, #080C24) 0%, #1e293b 100%);
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease;
 }
 
@@ -978,8 +978,8 @@
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 20px;
-  padding: 50px 40px;
+  border-radius: 16px;
+  padding: 30px 15px; /* FIX: Much smaller padding for mobile text to breathe */
   max-width: 800px;
   text-align: center;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
@@ -989,34 +989,56 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 64px;
-  height: 64px;
+  width: 50px; /* Slightly smaller on mobile */
+  height: 50px;
   background: rgba(250, 67, 24, 0.15);
   color: var(--action-orange, #FA4318);
   border-radius: 50%;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 .csrOverlay h2 {
-  font-size: clamp(2rem, 4vw, 2.6rem);
+  font-size: clamp(1.75rem, 6vw, 2.6rem);
   color: #ffffff;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   font-weight: 800;
   letter-spacing: -0.5px;
 }
 
 .csrOverlay p {
-  font-size: 1.1rem;
+  font-size: 0.95rem; /* Slightly smaller on mobile */
   color: rgba(255, 255, 255, 0.85);
-  line-height: 1.8;
+  line-height: 1.6;
   margin: 0;
 }
 
 @media (min-width: 768px) {
-  .csrOverlay {
-    padding: 40px 20px;
+  .csrSection {
+    padding: 100px 20px;
   }
 
+  .csrBanner {
+    min-height: 480px;
+    border-radius: 24px;
+    padding: 60px 20px;
+  }
+
+  .csrOverlay {
+    padding: 50px 40px; /* Desktop gets the big padding back */
+    border-radius: 20px;
+  }
+
+  .csrIconWrapper {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 25px;
+  }
+
+  .csrOverlay p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+  }
+  
   /* =========================================
      DESKTOP LAYOUTS - TOP SECTIONS
      ========================================= */
